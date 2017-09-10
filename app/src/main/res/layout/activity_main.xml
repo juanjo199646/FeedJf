@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.i053113.feedjf.MainActivity"
+    android:background="@color/fondototal">
+
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="18dp"
+              android:background="@color/fondo2"
+              android:layout_marginTop="10dp">
+
+
+              <RelativeLayout
+                  android:id="@+id/rela1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="10dp">
+                  
+                  
+                  <ImageView
+                      android:id="@+id/imagee1"
+                      android:layout_width="50dp"
+                      android:layout_height="46dp"
+                      android:background="@drawable/primera"/>
+
+
+                  <TextView
+                      android:id="@+id/text1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Jam"
+                      android:layout_toRightOf="@+id/imagee1"
+                      android:layout_marginLeft="10dp"
+                      android:textSize="18sp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/text2"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/pos"
+                      android:layout_toRightOf="@+id/imagee1"
+                      android:layout_below="@+id/text1"
+                      android:layout_marginLeft="10dp"
+                      android:textSize="16sp" />
+
+                  <ImageView
+                      android:id="@+id/imagee2"
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:background="@drawable/icons8_future_80"
+                      android:layout_toRightOf="@+id/text1"
+                      android:layout_marginLeft="80dp" />
+
+                  <TextView
+                      android:id="@+id/text3"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/dos"
+                      android:layout_toRightOf="@+id/text1"
+                      android:textSize="16sp"
+                      android:layout_marginLeft="105dp" />
+
+              </RelativeLayout>
+
+              <!--seguna caja con relative layout-->
+
+              <RelativeLayout
+                  android:id="@+id/rela2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/rela1">
+
+
+                  <ImageView
+                      android:id="@+id/cafe"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:background="@drawable/cafe_2"/>
+
+                  <TextView
+                  android:id="@+id/text4"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/app_parfo"
+                  android:textColor="@color/blanco"
+                  android:textSize="16sp"
+                  android:layout_alignBottom="@+id/cafe"
+                  android:layout_marginBottom="10dp" />
+
+                  <TextView
+                      android:id="@+id/text5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/app_des"
+                      android:textColor="@color/blanco"
+                      android:textSize="16sp"
+                     android:layout_toRightOf="@+id/text4"
+                      android:layout_alignBottom="@+id/cafe"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginLeft="20dp"
+                      android:textStyle="bold" />
+
+                  <ImageView
+                      android:id="@+id/bolsita"
+                      android:layout_width="22dp"
+                      android:layout_height="35dp"
+                      android:background="@drawable/icons8_shopping_bag_128"
+                      android:layout_toRightOf="@+id/text5"
+                      android:layout_alignBottom="@+id/cafe"
+                      android:layout_marginBottom="4sp"
+                      android:layout_marginLeft="8dp" />
+
+              </RelativeLayout>
+
+              <!--tercera caja con relative layout-->
+
+              <RelativeLayout
+                  android:id="@+id/rela3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/rela2">
+
+
+
+                  <RelativeLayout
+                      android:id="@+id/relam1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp">
+
+                      <ImageView
+                          android:id="@+id/coracon"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                         android:background="@drawable/corazon"
+                        />
+
+
+                      <TextView
+                          android:id="@+id/dosca"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/coracon"
+                          android:text="@string/app_do"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+                          android:textColor="@color/rojo"
+                         />
+
+                  </RelativeLayout>
+
+                        <!--parte media -->
+
+                  <RelativeLayout
+                      android:id="@+id/relam2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:layout_centerInParent="true"
+
+                      >
+
+                      <ImageView
+                          android:id="@+id/mensaje"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/icons8_sms_80"
+                          />
+
+
+                      <TextView
+                          android:id="@+id/nueveocho"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/mensaje"
+                          android:text="@string/app_nue"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+
+                          />
+
+                  </RelativeLayout>
+
+                  <!--parte derecha -->
+
+                  <RelativeLayout
+                      android:id="@+id/relam3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="9sp"
+
+                      >
+
+                      <ImageView
+                          android:id="@+id/iconno"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/icons8_shuffle_96"
+                          />
+
+
+                      <TextView
+                          android:id="@+id/seisnueve"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/iconno"
+                          android:text="@string/app_sei"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+
+                          />
+
+                  </RelativeLayout>
+
+
+
+
+              </RelativeLayout>
+
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="18dp"
+              android:layout_marginTop="10dp"
+              android:background="@color/fondo">
+
+
+              <RelativeLayout
+                  android:id="@+id/rela1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="10dp">
+
+
+                  <ImageView
+                      android:id="@+id/imagee1"
+                      android:layout_width="50dp"
+                      android:layout_height="46dp"
+                      android:background="@drawable/rubia"/>
+
+
+                  <TextView
+                      android:id="@+id/text1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/eli"
+                      android:layout_toRightOf="@+id/imagee1"
+                      android:layout_marginLeft="10dp"
+                      android:textSize="18sp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/text2"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/sha"
+                      android:layout_toRightOf="@+id/imagee1"
+                      android:layout_below="@+id/text1"
+                      android:layout_marginLeft="10dp"
+                      android:textSize="16sp" />
+
+                  <ImageView
+                      android:id="@+id/imagee2"
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:background="@drawable/icons8_future_80"
+                      android:layout_toRightOf="@+id/text1"
+                      android:layout_marginLeft="100dp" />
+
+                  <TextView
+                      android:id="@+id/text3"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/tres"
+                      android:layout_toRightOf="@+id/text1"
+                      android:textSize="16sp"
+                      android:layout_marginLeft="128dp" />
+
+              </RelativeLayout>
+
+              <!--seguna caja con relative layout-->
+
+              <RelativeLayout
+                  android:id="@+id/rela2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/rela1">
+
+
+                  <ImageView
+                      android:id="@+id/cafe"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:background="@drawable/vestir"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentLeft="true"
+                      android:layout_alignParentStart="true" />
+
+                  <TextView
+                      android:id="@+id/text4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/app_parfo"
+                      android:textColor="@color/blanco"
+                      android:textSize="16sp"
+                      android:layout_alignBottom="@+id/cafe"
+                      android:layout_marginBottom="10dp" />
+
+                  <TextView
+                      android:id="@+id/text5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/app_des"
+                      android:textColor="@color/blanco"
+                      android:textSize="16sp"
+                      android:layout_toRightOf="@+id/text4"
+                      android:layout_alignBottom="@+id/cafe"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginLeft="20dp"
+                      android:textStyle="bold" />
+
+                  <ImageView
+                      android:id="@+id/bolsita"
+                      android:layout_width="22dp"
+                      android:layout_height="35dp"
+                      android:background="@drawable/icons8_shopping_bag_128"
+                      android:layout_toRightOf="@+id/text5"
+                      android:layout_alignBottom="@+id/cafe"
+                      android:layout_marginBottom="4sp"
+                      android:layout_marginLeft="8dp" />
+
+              </RelativeLayout>
+
+              <!--tercera caja con relative layout-->
+
+              <RelativeLayout
+                  android:id="@+id/rela3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/rela2">
+
+
+
+                  <RelativeLayout
+                      android:id="@+id/relam1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp">
+
+                      <ImageView
+                          android:id="@+id/coracon"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/corazon"
+                          />
+
+
+                      <TextView
+                          android:id="@+id/dosca"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/coracon"
+                          android:text="@string/app_cua"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+                          android:textColor="@color/rojo"
+                          />
+
+                  </RelativeLayout>
+
+                  <!--parte media -->
+
+                  <RelativeLayout
+                      android:id="@+id/relam2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:layout_centerInParent="true"
+
+                      >
+
+                      <ImageView
+                          android:id="@+id/mensaje"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/icons8_sms_80"
+                          />
+
+
+                      <TextView
+                          android:id="@+id/nueveocho"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/mensaje"
+                          android:text="@string/app_sete"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+
+                          />
+
+                  </RelativeLayout>
+
+                  <!--parte derecha -->
+
+                  <RelativeLayout
+                      android:id="@+id/relam3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="9sp"
+
+                      >
+
+                      <ImageView
+                          android:id="@+id/iconno"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/icons8_shuffle_96"
+                          />
+
+
+                      <TextView
+                          android:id="@+id/seisnueve"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/iconno"
+                          android:text="@string/app_trein"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+
+                          />
+
+                  </RelativeLayout>
+
+
+
+
+              </RelativeLayout>
+
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="18dp"
+              android:background="@color/fondo2"
+              android:layout_marginTop="10dp">
+
+
+              <RelativeLayout
+                  android:id="@+id/rela1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="10dp">
+
+
+                  <ImageView
+                      android:id="@+id/imagee1"
+                      android:layout_width="50dp"
+                      android:layout_height="46dp"
+                      android:background="@drawable/trigue_a"/>
+
+
+                  <TextView
+                      android:id="@+id/text1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/mar"
+                      android:layout_toRightOf="@+id/imagee1"
+                      android:layout_marginLeft="10dp"
+                      android:textSize="18sp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/text2"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/pos"
+                      android:layout_toRightOf="@+id/imagee1"
+                      android:layout_below="@+id/text1"
+                      android:layout_marginLeft="10dp"
+                      android:textSize="16sp" />
+
+                  <ImageView
+                      android:id="@+id/imagee2"
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:background="@drawable/icons8_future_80"
+                      android:layout_toRightOf="@+id/text1"
+                      android:layout_marginLeft="80dp" />
+
+                  <TextView
+                      android:id="@+id/text3"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/seis"
+                      android:layout_toRightOf="@+id/text1"
+                      android:textSize="16sp"
+                      android:layout_marginLeft="105dp" />
+
+              </RelativeLayout>
+
+              <!--seguna caja con relative layout-->
+
+              <RelativeLayout
+                  android:id="@+id/rela2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/rela1">
+
+
+                  <ImageView
+                      android:id="@+id/cafe"
+                      android:layout_width="match_parent"
+                      android:layout_height="180dp"
+                      android:background="@drawable/andorid"/>
+
+                  <TextView
+                      android:id="@+id/text4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/app_parfoi"
+                      android:textColor="@color/blanco"
+                      android:textSize="16sp"
+                      android:layout_alignBottom="@+id/cafe"
+                      android:layout_marginBottom="10dp" />
+
+                  <TextView
+                      android:id="@+id/text5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/app_des"
+                      android:textColor="@color/blanco"
+                      android:textSize="16sp"
+                      android:layout_toRightOf="@+id/text4"
+                      android:layout_alignBottom="@+id/cafe"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginLeft="20dp"
+                      android:textStyle="bold" />
+
+                  <ImageView
+                      android:id="@+id/bolsita"
+                      android:layout_width="22dp"
+                      android:layout_height="35dp"
+                      android:background="@drawable/icons8_shopping_bag_128"
+                      android:layout_toRightOf="@+id/text5"
+                      android:layout_alignBottom="@+id/cafe"
+                      android:layout_marginBottom="4sp"
+                      android:layout_marginLeft="8dp" />
+
+              </RelativeLayout>
+
+              <!--tercera caja con relative layout-->
+
+              <RelativeLayout
+                  android:id="@+id/rela3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/rela2">
+
+
+
+                  <RelativeLayout
+                      android:id="@+id/relam1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp">
+
+                      <ImageView
+                          android:id="@+id/coracon"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/corazon"
+                          />
+
+
+                      <TextView
+                          android:id="@+id/dosca"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/coracon"
+                          android:text="@string/app_do"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+                          android:textColor="@color/rojo"
+                          />
+
+                  </RelativeLayout>
+
+                  <!--parte media -->
+
+                  <RelativeLayout
+                      android:id="@+id/relam2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:layout_centerInParent="true"
+
+                      >
+
+                      <ImageView
+                          android:id="@+id/mensaje"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/icons8_sms_80"
+                          />
+
+
+                      <TextView
+                          android:id="@+id/nueveocho"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/mensaje"
+                          android:text="@string/app_nue"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+
+                          />
+
+                  </RelativeLayout>
+
+                  <!--parte derecha -->
+
+                  <RelativeLayout
+                      android:id="@+id/relam3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="10dp"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="9sp"
+
+                      >
+
+                      <ImageView
+                          android:id="@+id/iconno"
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/icons8_shuffle_96"
+                          />
+
+
+                      <TextView
+                          android:id="@+id/seisnueve"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/iconno"
+                          android:text="@string/app_sei"
+                          android:textStyle="bold"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginLeft="8dp"
+
+                          />
+
+                  </RelativeLayout>
+
+
+
+
+              </RelativeLayout>
+
+
+          </RelativeLayout>
+
+
+
+
+
+      </LinearLayout>
+
+
+
+
+
+
+
+
+
+  </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/primera"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rubia"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trigue_a"/>
+
+
+
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
